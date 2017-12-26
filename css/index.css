@@ -1,15 +1,368 @@
-.form-row {
-    display: flex;
-    flex-direction: row;
+/*fonts*/
+@font-face {
+    font-family: Avalon;
+    src: url(../fonts/Avalon.ttf);
 }
 
-.form-column {
-    display: flex;
-    flex-direction: column;
+@font-face {
+    font-family: Avalon;
+    src: url(../fonts/LucidaGrande.ttf);
 }
+
+/*//fonts*/
+
+/*header*/
+.logo-wrapper {
+    margin-top: 53px;
+}
+
+.logo {
+    width: 183px;
+    margin: auto;
+}
+
+.under-logo-header h4 {
+    width: 245px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    height: 14px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    text-transform: uppercase;
+    line-height: normal;
+    letter-spacing: 5.6px;
+    color: #191919;
+}
+
+.big-header h1 {
+    margin: auto;
+    margin-top: 65px;
+    width: 841px;
+    height: 67px;
+    opacity: 0.95;
+    font-family: 'Avalon-Bold', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.12;
+    letter-spacing: 0.8px;
+    text-align: center;
+    color: #191919;
+}
+
+.yellow-square {
+    font-size: 20px;
+    color: #fdd81c;
+}
+
+.header-text p {
+    margin: auto;
+    margin-top: 46px;
+    width: 770px;
+    height: 215px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.79;
+    letter-spacing: normal;
+    text-align: center;
+    color: #191919;
+}
+
+.sep {
+    margin: auto;
+    margin-top: 52px;
+    margin-bottom: 76px;
+    width: 948px;
+    height: 1.3px;
+    background-color: #ebebeb;
+}
+
+/*//header*/
+
+/*main form*/
+form {
+    max-width: 948px;
+    margin: auto;
+}
+
+.form-row {
+    clear: both;
+}
+
+.form-column-left {
+    float: left;
+}
+
+.form-column-right {
+    float: right;
+}
+
+.form-item {
+    max-width: 450px;
+}
+
+.text-field-label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 1.4px;
+    color: #4d4d4d;
+    margin-bottom: 22px;
+}
+
+input[type="text"] {
+    width: 450px;
+    height: 51px;
+    border-radius: 2px;
+    border: solid 1px #dcdcdc;
+    margin-bottom: 30px;
+    margin-top: 22px;
+}
+
+textarea {
+    width: 450px;
+    height: 169px;
+    border-radius: 2px;
+    border: solid 1px #dcdcdc;
+    margin-bottom: 30px;
+    margin-top: 22px;
+}
+
+/*block to upload file*/
+.input-file-wrapper-header {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 1.4px;
+    color: #4d4d4d;
+}
+.input-file-wrapper {
+    width: 450px;
+    height: 51px;
+    border-radius: 2px;
+    border: solid 1px #dcdcdc;
+    margin-bottom: 30px;
+    margin-top: 22px;
+    position: relative;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    float: right;
+    margin: 8px;
+    padding-top: 10px;
+    display: inline-block;
+    width: 88px;
+    height: 25px;
+    border-radius: 2px;
+    background-color: #fddc3e;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    text-align: center;
+    line-height: 1.42;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    cursor: pointer;
+}
+
+.choose-file {
+    margin: 10px;
+    width: 78px;
+    height: 23px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.64;
+    letter-spacing: normal;
+    color: #4d4d4d;
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+}
+
+/*//block to upload file*/
+
+/*radio buttons block*/
+.graduated {
+    width: 770px;
+    height: 36px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.25;
+    letter-spacing: normal;
+    color: #4d4d4d;
+    margin-bottom: 13px;
+}
+
+.graduated input[type="radio"] {
+
+}
+
+input[type="checkbox"] {
+    width: 39px;
+    height: 39px;
+    border-radius: 2px;
+    border: solid 1px #dcdcdc;
+    background-color: white;
+    margin-right: 27px;
+}
+
+.htmlacademy {
+    font-family: 'LucidaGrande', sans-serif;
+    border-bottom: solid 1px #fddc3e;;
+}
+
+.radio-buttons-wrapper {
+    margin-bottom: 57px;
+}
+
+.radio-buttons-label {
+    width: 31px;
+    height: 17px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: 1.4px;
+    color: #4d4d4d;
+}
+/*//radio buttons block*/
+
+/*checkbox block*/
+.mark-skills {
+    width: 596px;
+    height: 25px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    color: #979797;
+    margin-bottom: 33px;
+}
+
+.form-item-checkbox {
+    margin-bottom: 35px;
+}
+
+.checkbox-label {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 3.25;
+    letter-spacing: normal;
+    color: #4d4d4d;
+}
+/*//checkbox block*/
+
+/*submit button block*/
+.button-wrapper-block {
+    margin-bottom: 203px;
+    padding-top: 96px;
+}
+
+.button-wrapper {
+    margin: 0 auto;
+    width: 276px;
+    height: 76px;
+}
+
+#submit {
+    width: 276px;
+    height: 76px;
+    background-color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    color: #191919;
+    border: none;
+    text-align: right;
+    box-shadow: 0 2px 30px 0 rgba(216, 216, 216, 0.5);
+}
+
+.line {
+    width: 48px;
+    height: 1px;
+    border-bottom: solid 1px #191919;
+}
+/*//submit button block*/
+/*//main form*/
+
+/*footer*/
 .footer {
+    height: 686px;
     background-color: #000000;
+    position: relative;
 }
+
 .footer-img-wrapper {
     background-image: url("../img/bitmap.png");
+    position: relative;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+.footer-text-wrapper p {
+    font-family: 'Avalon-Bold', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 130px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*//footer*/

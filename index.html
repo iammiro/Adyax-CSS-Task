@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Adyax CSS Task</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
 <div class="header">
-    <div class="logo">
-        <a href="/">
-            <img src="img/page1.png" alt="logo">
-        </a>
+    <div class="logo-wrapper">
+        <div class="logo">
+            <a href="/">
+                <img src="img/page1.png" alt="logo">
+            </a>
+        </div>
     </div>
     <div class="under-logo-header">
         <h4>A Better Experience</h4>
     </div>
     <div class="big-header">
-        <h1>Frond-End Developer.</h1>
+        <h1>Frond-End Developer<span class="yellow-square">&#9632;</span></h1>
     </div>
     <div class="header-text">
         <p>
@@ -24,73 +28,117 @@
             work in partnership with consistent, transparent communication.
         </p>
     </div>
+    <div class="sep">
+
+    </div>
 </div>
 <div class="body">
     <div class="form-wrapper">
         <form action="">
             <div class="form-row">
-                <div class="form-column">
-                    <label for="name">YOUR NAME</label>
-                    <input type="text" name="" id="name">
-                    <label for="email">YOUR EMAIL</label>
-                    <input type="text" name="" id="email">
-                    <label for="portfolio">YOUR PORTOLIO / GITHUB</label>
-                    <input type="text" name="" id="portfolio">
+                <div class="form-column-left">
+                    <div class="form-item">
+                        <label for="name" class="text-field-label">YOUR NAME</label>
+                        <input type="text" name="" id="name">
+                    </div>
+                    <div class="form-item">
+                        <label for="email" class="text-field-label">YOUR EMAIL</label>
+                        <input type="text" name="" id="email">
+                    </div>
+                    <div class="form-item">
+                        <label for="portfolio" class="text-field-label">YOUR PORTOLIO / GITHUB</label>
+                        <input type="text" name="" id="portfolio">
+                    </div>
                 </div>
-                <div class="form-column">
-                    <label for="message">MESSAGE</label>
-                    <textarea name="" id="message"></textarea>
-                    <label for="cv">CV</label>
-                    <input type="file" name="" id="cv">
-                    <input type="submit" name="" value="UPLOAD">
+                <div class="form-column-right">
+                    <div class="form-item">
+                        <label for="message" class="text-field-label">MESSAGE</label>
+                        <textarea name="" id="message"></textarea>
+                    </div>
+                    <div class="form-item">
+                        <span class="input-file-wrapper-header">CV</span>
+                        <div class="input-file-wrapper">
+                            <span class="choose-file">
+                                Choose file
+                            </span>
+                            <input type="file" name="file" id="file" class="inputfile"/>
+                            <label for="file">UPLOAD</label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="form-row">
                 <div class="form-column">
                     <div class="radio-buttons-wrapper">
-                        <p>Graduated from htmlacademy.ru?</p>
-                        <label for="yes">Yes</label>
+                        <div class="graduated">Graduated from <span class="htmlacademy">htmlacademy.ru?</span></div>
+                        <label for="yes" class="radio-buttons-label">Yes</label>
                         <input type="radio" id="yes" checked>
-                        <label for="no">No</label>
+                        <label for="no" class="radio-buttons-label">No</label>
                         <input type="radio" id="no">
                     </div>
                 </div>
             </div>
             <div>
-                <p>* Please mark skills you are best in, and types of tasks you are good at </p>
+                <p class="mark-skills">* Please mark skills you are best in, and types of tasks you are good at </p>
             </div>
             <div class="form-row">
-                <div class="form-column">
-                    <label for="jquery">jQuery</label>
-                    <input type="checkbox" id="jquery" checked>
-                    <label for="grunt">Use GRUNT</label>
-                    <input type="checkbox" id="grunt">
-                    <label for="haml">HAML</label>
-                    <input type="checkbox" id="haml">
-                    <label for="sass">SASS</label>
-                    <input type="checkbox" id="sass">
-                    <label for="less">LESS</label>
-                    <input type="checkbox" id="less">
-                    <label for="coffeescript">CoffeeScript</label>
-                    <input type="checkbox" id="coffeescript">
+                <div class="form-column-left">
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="jquery" checked>
+                        <label for="jquery" class="checkbox-label">jQuery</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="grunt">
+                        <label for="grunt" class="checkbox-label">Use GRUNT</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="haml">
+                        <label for="haml" class="checkbox-label">HAML</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="sass">
+                        <label for="sass" class="checkbox-label">SASS</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="less">
+                        <label for="less" class="checkbox-label">LESS</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="coffeescript">
+                        <label for="coffeescript" class="checkbox-label">CoffeeScript</label>
+                    </div>
                 </div>
-                <div class="form-column">
-                    <label for="jade">Jade</label>
-                    <input type="checkbox" id="jade">
-                    <label for="stylus">Stylus</label>
-                    <input type="checkbox" id="stylus">
-                    <label for="angular">Know Angular</label>
-                    <input type="checkbox" id="angular">
-                    <label for="android">Front-end development for Android</label>
-                    <input type="checkbox" id="android">
-                    <label for="ios">Front-end development for iOS</label>
-                    <input type="checkbox" id="ios">
-                    <label for="windowsphone">Front-end development for Windows Phone</label>
-                    <input type="checkbox" id="windowsphone">
+                <div class="form-column-right">
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="jade">
+                        <label for="jade" class="checkbox-label">Jade</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="stylus">
+                        <label for="stylus" class="checkbox-label">Stylus</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="angular">
+                        <label for="angular" class="checkbox-label">Know Angular</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="android">
+                        <label for="android" class="checkbox-label">Front-end development for Android</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="ios">
+                        <label for="ios" class="checkbox-label">Front-end development for iOS</label>
+                    </div>
+                    <div class="form-item-checkbox">
+                        <input type="checkbox" id="windowsphone">
+                        <label for="windowsphone" class="checkbox-label">Front-end development for Windows Phone</label>
+                    </div>
                 </div>
             </div>
-            <div class="form-row">
-                <button type="submit" id="submit">SUBMIT</button>
+            <div class="form-row button-wrapper-block">
+                <div class="button-wrapper">
+                    <button type="submit" id="submit">&#9866;SUBMIT</button>
+                </div>
             </div>
         </form>
     </div>
