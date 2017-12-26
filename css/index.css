@@ -1,0 +1,15 @@
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+}
+.footer {
+    background-color: #000000;
+}
+.footer-img-wrapper {
+    background-image: url("../img/bitmap.png");
+}
