@@ -70,11 +70,16 @@
             <div class="form-row">
                 <div class="form-column">
                     <div class="radio-buttons-wrapper">
-                        <div class="graduated">Graduated from <span class="htmlacademy">htmlacademy.ru?</span></div>
-                        <label for="yes" class="radio-buttons-label">Yes</label>
-                        <input type="radio" id="yes" checked>
-                        <label for="no" class="radio-buttons-label">No</label>
-                        <input type="radio" id="no">
+                        <div class="graduated">Graduated from <a class="htmlacademy" href="https://htmlacademy.ru">htmlacademy.ru?</a></div>
+                        <p>
+                            <input type="radio" id="yes" name="radio-group" checked>
+                            <label for="yes" class="radio-buttons-label">Yes</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="no" name="radio-group">
+                            <label for="no" class="radio-buttons-label">No</label>
+                        </p>
+
                     </div>
                 </div>
             </div>
@@ -137,7 +142,10 @@
             </div>
             <div class="form-row button-wrapper-block">
                 <div class="button-wrapper">
-                    <button type="submit" id="submit">&#9866;SUBMIT</button>
+                    <button type="submit" id="submit">
+                        <span class="button-line"></span>
+                        <span class="button-text">SUBMIT</span>
+                    </button>
                 </div>
             </div>
         </form>
