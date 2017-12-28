@@ -106,6 +106,9 @@ form {
 
 .form-column-right {
     float: right;
+}
+
+.form-column-right-checkboxes {
     margin-right: 30px;
 }
 
@@ -126,11 +129,11 @@ form {
 }
 
 .custom-text-input {
-    width: 450px;
-    height: 51px;
+    width: 448px;
+    height: 48px;
     border-radius: 2px;
     border: solid 1px #dcdcdc;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
     margin-top: 22px;
     outline: none;
 }
@@ -141,7 +144,7 @@ form {
 
 .custom-textarea {
     width: 450px;
-    height: 169px;
+    height: 163px;
     border-radius: 2px;
     border: solid 1px #dcdcdc;
     margin-bottom: 30px;
@@ -168,11 +171,11 @@ form {
 
 .input-file-wrapper {
     width: 450px;
-    height: 51px;
+    height: 50px;
     border-radius: 2px;
     border: solid 1px #dcdcdc;
     margin-bottom: 30px;
-    margin-top: 13px;
+    margin-top: 20px;
     position: relative;
 }
 
@@ -316,7 +319,7 @@ form {
 
 .radio-buttons-wrapper {
     padding-top: 17px;
-    margin-bottom: 100px;
+    margin-bottom: 109px;
 }
 
 .radio-buttons-wrapper p {
@@ -352,7 +355,7 @@ form {
     line-height: 2.08;
     letter-spacing: normal;
     color: #979797;
-    margin-bottom: 33px;
+    margin-bottom: 25px;
 }
 
 .form-item-checkbox {
@@ -484,8 +487,8 @@ label:hover:before {
     height: 1px;
     border-bottom: solid 1px #191919;
     float: left;
-    margin-left: 40px;
-    margin-top: 5px;
+    margin-left: 29px;
+    margin-top: 7px;
 }
 
 .button-text {
@@ -573,7 +576,6 @@ label:hover:before {
 
     .form-column-right {
         float: right;
-        margin-right: 0;
     }
 
     .form-item {
@@ -701,7 +703,6 @@ label:hover:before {
 
     .form-column-right {
         float: none;
-        margin-right: 0;
     }
 
     .form-item {
@@ -856,7 +857,6 @@ label:hover:before {
 
     .form-column-right {
         float: none;
-        margin-right: 0;
     }
 
     .form-item {
