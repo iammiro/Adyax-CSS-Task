@@ -17,6 +17,16 @@
 
 /*//fonts*/
 
+/*common css*/
+.main-content-wrapper {
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    /*padding: 0 15px;*/
+}
+
+/*//common css*/
+
 /*header*/
 .logo-wrapper {
     margin-top: 54px;
@@ -504,6 +514,13 @@ label:hover:before {
     height: 686px;
     background-color: #000000;
     position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    max-width: 100%;
+    background-color: #000000;
 }
 
 .footer-img-wrapper {
@@ -673,7 +690,6 @@ label:hover:before {
 
     /*//submit button block*/
     /*//main form*/
-
     .footer-text-wrapper p {
         font-size: 30px;
     }
