@@ -413,26 +413,27 @@ form {
 /* checked mark aspect */
 .custom-checkbox-input:not(:checked) + label:after,
 .custom-checkbox-input:checked + label:after {
-    content: '✔';
+    content: '';
+    width: 16px;
+    height: 7px;
     position: absolute;
-    top: 2px;
-    left: 13px;
-    font-size: 20px;
-    line-height: 2;
-    color: #4d4d4d;
-    transition: all .2s;
-    font-family: 'Work Sans', sans-serif;
+    top: 13px;
+    left: 12px;
+    border: 2px solid #4d4d4d;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    transform: rotate(-45deg);
 }
 
 /* checked mark aspect changes */
 .custom-checkbox-input:not(:checked) + label:after {
     opacity: 0;
-    transform: scale(0);
 }
 
 .custom-checkbox-input:checked + label:after {
     opacity: 1;
-    transform: scale(1);
 }
 
 /* disabled checkbox */
