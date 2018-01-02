@@ -969,7 +969,7 @@ label:hover:before {
     /* checked mark aspect */
     .custom-checkbox-input:not(:checked) + label:after,
     .custom-checkbox-input:checked + label:after {
-        top: -2px;
+        top: 9px;
         left: 7px;
     }
 
@@ -1072,7 +1072,7 @@ label:hover:before {
     .graduated {
         width: 90%;
         height: 36px;
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 13px;
     }
 
@@ -1097,7 +1097,7 @@ label:hover:before {
     /*checkbox block*/
     .mark-skills {
         clear: both;
-        width: 100%;
+        width: 95%;
         margin: auto;
         margin-bottom: 53px;
     }
@@ -1127,7 +1127,7 @@ label:hover:before {
     /* checked mark aspect */
     .custom-checkbox-input:not(:checked) + label:after,
     .custom-checkbox-input:checked + label:after {
-        top: -2px;
+        top: 9px;
         left: 7px;
     }
 
